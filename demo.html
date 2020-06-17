@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="anime.js"></script>
+    <script src="demo.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            position: relative;
+            width: 520px;
+            height: 280px;
+            background: black;
+            overflow: hidden;
+        }
+
+        #box ul {
+            position: relative;
+            top:0;
+            left: 0;
+            width: 600%;
+        }
+
+        #box ul li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .img {
+            float: left;
+
+        }
+        .a_left,.a_right{
+            display: none;
+            position: absolute;
+            top:25%;
+            margin-top:-20px;
+            width: 24px;
+            height: 40px;
+            background: RGBa(0,0,0, .3);
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            font-size: 18px;
+            z-index: 99;
+        }
+        .a_right{
+            right:0;
+        }
+        .circle{
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            list-style:none;
+        }
+        .circle li{
+            float: left;
+            width: 8px;
+            height: 8px;
+            border: 2px solid rgba(25,255,255,0.5);
+            margin: 0 3px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .current{
+            background: lime;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <a href="javascript:;" class="a_left"><</a>
+    <a href="javascript:;" class="a_right">></a>
+    <ul class="aul">
+        <li>
+            <img class="img" src="img/TB1Fgbtwbr1gK0jSZR0SuvP8XXa.jpg" alt="#">
+        </li>
+        <li>
+            <img class="img" src="img/TB1NkI6DpY7gK0jSZKzSuuikpXa.jpg" alt="#">
+        </li>
+        <li>
+            <img class="img" src="img/TB1g4eLDYH1gK0jSZFwSuw7aXXa.jpg" alt="#">
+        </li>
+
+    </ul>
+    <ol class="circle">
+    </ol>
+</div>
+
+</body>
+</html>
